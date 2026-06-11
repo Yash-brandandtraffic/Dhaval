@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhaval Vegad — Operations Manager | UK Advanced Manufacturing</title>
+  <meta name="description" content="Mechanical engineer and operations manager available for Operations Manager and Supply Chain Manager roles in UK advanced manufacturing. MSc Engineering Business Management, University of Exeter." />
+  <meta property="og:title" content="Dhaval Vegad — Operations Manager | UK Advanced Manufacturing" />
+  <meta property="og:description" content="Mechanical engineer and operations manager available for Operations Manager and Supply Chain Manager roles in UK advanced manufacturing. MSc Engineering Business Management, University of Exeter." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:      #1B2A4A;
+      --gold:      #C9A84C;
+      --gold-dark: #B8963D;
+      --text:      #1A1A1A;
+      --text-light:#FFFFFF;
+      --text-mid:  #5C6370;
+      --bg:        #F8F7F4;
+      --surface:   #FFFFFF;
+      --border:    #E2E0DB;
+      --max:       760px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--text);
+      background: var(--surface);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: 64px;
+      background: rgba(27,42,74,0.97);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      padding: 0 32px;
+      gap: 40px;
+    }
+    .nav-logo {
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      white-space: nowrap;
+      text-decoration: none;
+      margin-right: auto;
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #fff; }
+    .btn { display: inline-block; text-decoration: none; cursor: pointer; border: none; font-family: inherit; transition: background 0.2s, transform 0.15s, box-shadow 0.2s; }
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 15px;
+      font-weight: 600;
+      padding: 11px 22px;
+      border-radius: 4px;
+    }
+    .btn-gold:hover { background: var(--gold-dark); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(201,168,76,0.25); }
+    .btn-gold-lg {
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 16px;
+      font-weight: 600;
+      padding: 16px 36px;
+      border-radius: 4px;
+    }
+    .btn-gold-lg:hover { background: var(--gold-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(201,168,76,0.3); }
+    .btn-ghost {
+      background: transparent;
+      color: var(--gold);
+      font-size: 15px;
+      font-weight: 600;
+      padding: 11px 22px;
+      border-radius: 4px;
+      border: 2px solid var(--gold);
+    }
+    .btn-ghost:hover { background: var(--gold); color: var(--navy); }
+
+    /* ── SECTIONS ── */
+    .section { padding: 96px 32px; }
+    .section-light { background: var(--bg); }
+    .section-dark  { background: var(--navy); }
+    .section-white { background: var(--surface); }
+
+    .container { max-width: var(--max); margin: 0 auto; }
+    .container-wide { max-width: 900px; margin: 0 auto; }
+
+    /* ── ATTENTION TAG ── */
+    .attention-tag {
+      background: var(--navy);
+      padding: 14px 32px;
+      text-align: center;
+      margin-top: 64px;
+    }
+    .attention-tag p {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--navy);
+      padding: 80px 32px 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 28px,
+        rgba(255,255,255,0.018) 28px,
+        rgba(255,255,255,0.018) 29px
+      );
+      pointer-events: none;
+    }
+    .hero-inner { max-width: var(--max); margin: 0 auto; position: relative; }
+    .hero h1 {
+      font-size: 56px;
+      line-height: 60px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 24px;
+      max-width: 640px;
+    }
+    .hero-sub {
+      font-size: 18px;
+      line-height: 28px;
+      color: rgba(255,255,255,0.82);
+      max-width: 580px;
+      margin-bottom: 12px;
+    }
+    .hero-meta {
+      font-size: 15px;
+      line-height: 24px;
+      color: rgba(255,255,255,0.55);
+      max-width: 580px;
+      margin-bottom: 36px;
+    }
+    .hero-ctas { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .hero-scroll-hint {
+      text-align: left;
+      margin-top: 60px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.04em;
+    }
+    .scroll-arrow {
+      display: inline-block;
+      margin-top: 6px;
+      animation: bounce 2s infinite;
+      color: var(--gold);
+      font-size: 18px;
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(6px); }
+    }
+
+    /* ── CREDENTIAL BAR ── */
+    .cred-bar {
+      background: var(--bg);
+      padding: 0 32px 48px;
+    }
+    .cred-table {
+      max-width: 820px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .cred-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      gap: 12px;
+      align-items: center;
+    }
+    .cred-row:last-child { border-bottom: none; }
+    .cred-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .cred-emoji { font-size: 20px; flex-shrink: 0; }
+    .cred-right {
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 20px;
+    }
+
+    /* ── TYPOGRAPHY HELPERS ── */
+    h2 {
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 32px;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    p { margin-bottom: 24px; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── PROBLEM ── */
+    .word-gap {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--navy);
+      display: block;
+      margin: 8px 0 32px;
+    }
+
+    /* ── POSITIONING ── */
+    .arc-statement {
+      font-size: 28px;
+      line-height: 38px;
+      font-weight: 600;
+      color: var(--navy);
+      margin: 40px 0;
+      text-align: center;
+    }
+    .arc-statement .arrow { color: var(--gold); }
+    .role-list { list-style: none; margin: 24px 0; }
+    .role-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 16px;
+      line-height: 26px;
+    }
+    .role-list li:last-child { border-bottom: none; }
+    .role-list strong { color: var(--navy); }
+
+    /* ── 90-DAY FRAMEWORK ── */
+    .days-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 48px 0 40px;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .day-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-left: 4px solid var(--gold);
+      border-radius: 6px;
+      padding: 32px 28px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .day-card-num {
+      position: absolute;
+      top: -8px;
+      right: 16px;
+      font-size: 80px;
+      font-weight: 700;
+      color: rgba(201,168,76,0.10);
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+    .day-card-phase {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .day-card h3 {
+      font-size: 18px;
+      line-height: 24px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .day-card ul {
+      list-style: none;
+      margin: 0 0 20px;
+    }
+    .day-card ul li {
+      font-size: 15px;
+      line-height: 24px;
+      color: rgba(255,255,255,0.80);
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      padding-left: 14px;
+      position: relative;
+    }
+    .day-card ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      opacity: 0.6;
+    }
+    .day-card ul li:last-child { border-bottom: none; }
+    .day-output {
+      font-size: 14px;
+      font-style: italic;
+      color: rgba(255,255,255,0.50);
+      line-height: 22px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 16px;
+      margin-top: 4px;
+    }
+    .month-summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 36px;
+    }
+    .month-item { text-align: center; }
+    .month-item strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .month-item p {
+      font-size: 15px;
+      line-height: 23px;
+      color: rgba(255,255,255,0.75);
+      margin: 0;
+    }
+    .section-dark h2 { color: #fff; }
+    .section-dark .section-intro { color: rgba(255,255,255,0.75); font-size: 18px; line-height: 28px; margin-bottom: 0; }
+
+    /* ── CASE STUDIES ── */
+    .case-study { margin-bottom: 56px; padding-bottom: 56px; border-bottom: 1px solid var(--border); }
+    .case-study:last-of-type { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .case-company {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .case-role {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      margin-bottom: 12px;
+    }
+    .case-rule {
+      width: 40px;
+      height: 2px;
+      background: var(--gold);
+      margin-bottom: 20px;
+    }
+    .case-note {
+      font-size: 14px;
+      font-style: italic;
+      color: var(--text-mid);
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* ── IMPACT TABLE ── */
+    .impact-table-wrap { overflow-x: auto; }
+    .impact-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+    .impact-table thead tr {
+      background: var(--navy);
+      color: #fff;
+    }
+    .impact-table thead th {
+      padding: 14px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-align: left;
+    }
+    .impact-table tbody tr:nth-child(even) { background: var(--bg); }
+    .impact-table tbody tr:nth-child(odd)  { background: var(--surface); }
+    .impact-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+      line-height: 22px;
+    }
+    .impact-table td:first-child { font-weight: 600; color: var(--navy); }
+    .impact-table td:last-child  { font-weight: 500; color: var(--navy); }
+    .impact-note {
+      margin-top: 36px;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--text);
+    }
+    .salary-line {
+      margin-top: 16px;
+      font-size: 15px;
+      line-height: 24px;
+      color: var(--text-mid);
+    }
+
+    /* ── DIFFERENTIATORS ── */
+    .diff-type { margin-bottom: 40px; }
+    .diff-type-label {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .diff-divider {
+      border: none;
+      border-top: 2px solid var(--gold);
+      margin: 48px 0 24px;
+      opacity: 1;
+    }
+    .diff-fourth-label {
+      font-size: 15px;
+      color: var(--text-mid);
+      margin-bottom: 24px;
+    }
+    .diff-bullets { list-style: none; margin-top: 32px; }
+    .diff-bullets li {
+      padding: 10px 0 10px 20px;
+      border-bottom: 1px solid var(--border);
+      font-size: 15px;
+      line-height: 24px;
+      position: relative;
+    }
+    .diff-bullets li::before { content: '→'; position: absolute; left: 0; color: var(--gold); }
+    .diff-bullets li:last-child { border-bottom: none; }
+
+    /* ── FAQ ── */
+    .faq-list { list-style: none; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 22px 0;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      line-height: 26px;
+    }
+    .faq-q:hover { color: var(--gold); }
+    .faq-icon {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--gold);
+      flex-shrink: 0;
+      line-height: 1;
+      width: 20px;
+      text-align: center;
+    }
+    .faq-a {
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--text);
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.35s ease, padding 0.25s ease;
+      padding: 0;
+    }
+    .faq-a.open { max-height: 600px; padding-bottom: 24px; }
+
+    /* ── CAPABILITIES ── */
+    .cap-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 48px;
+    }
+    .cap-block { }
+    .cap-name {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .cap-desc {
+      font-size: 15px;
+      line-height: 24px;
+      color: rgba(255,255,255,0.68);
+      margin: 0;
+    }
+
+    /* ── RISK REVERSAL ── */
+    .risk-block { margin-bottom: 40px; }
+    .risk-block:last-child { margin-bottom: 0; }
+    .risk-block strong {
+      display: block;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    /* ── FINAL CTA ── */
+    .final-cta {
+      background: var(--navy);
+      padding: 96px 32px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 28px,
+        rgba(255,255,255,0.015) 28px,
+        rgba(255,255,255,0.015) 29px
+      );
+      pointer-events: none;
+    }
+    .final-cta-inner { position: relative; max-width: 640px; margin: 0 auto; }
+    .final-cta h2 { color: #fff; margin-bottom: 20px; font-size: 36px; line-height: 44px; }
+    .final-cta p  { color: rgba(255,255,255,0.78); font-size: 17px; line-height: 27px; margin-bottom: 36px; }
+    .contact-details {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+    }
+    .contact-details a {
+      font-size: 15px;
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .contact-details a:hover { color: var(--gold); }
+    .contact-details span {
+      font-size: 14px;
+      color: rgba(255,255,255,0.40);
+    }
+    .available-line {
+      font-size: 13px;
+      font-style: italic;
+      color: var(--gold);
+      margin-top: 20px;
+      opacity: 0.85;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #111;
+      padding: 40px 32px;
+    }
+    .footer-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .footer-left .footer-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .footer-left .footer-title {
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 4px;
+    }
+    .footer-left .footer-creds {
+      font-size: 12px;
+      color: rgba(255,255,255,0.30);
+      line-height: 20px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      list-style: none;
+    }
+    .footer-links a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy {
+      width: 100%;
+      font-size: 12px;
+      color: rgba(255,255,255,0.22);
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    /* ── SECTION INTRO TEXT ── */
+    .section-intro-light {
+      font-size: 18px;
+      line-height: 28px;
+      color: var(--text-mid);
+      margin-bottom: 48px;
+      max-width: var(--max);
+    }
+
+    /* ── AVATAR PLACEHOLDER ── */
+    .avatar-placeholder {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy), var(--gold));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 0 16px; gap: 16px; }
+      .nav-links { display: none; }
+      .hero h1 { font-size: 38px; line-height: 44px; }
+      .section { padding: 56px 16px; }
+      .attention-tag { padding: 12px 16px; }
+      .hero { padding: 56px 16px 72px; }
+      .cred-bar { padding: 0 16px 40px; }
+      .cred-row { grid-template-columns: 1fr; }
+      .days-grid { grid-template-columns: 1fr; }
+      .month-summary { grid-template-columns: 1fr; }
+      .cap-grid { grid-template-columns: 1fr; }
+      h2 { font-size: 28px; line-height: 36px; }
+      .arc-statement { font-size: 22px; line-height: 32px; }
+      .footer-inner { flex-direction: column; }
+      .final-cta { padding: 64px 16px; }
+      .hero-ctas { flex-direction: column; align-items: flex-start; }
+      .word-gap { font-size: 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Dhaval Vegad</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#how-i-work">How I Work</a></li>
+    <li><a href="#lets-talk">Let's Talk</a></li>
+  </ul>
+  <a href="#lets-talk" class="btn btn-gold">Book a 20-Minute Call →</a>
+</nav>
+
+<!-- ATTENTION TAG -->
+<div class="attention-tag">
+  <p>For Manufacturing MDs, COOs, and Operations Directors at UK engineering SMEs</p>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Operations Chaos Doesn't Have to Be Your Problem.</h1>
+    <p class="hero-sub">I'm a mechanical engineer-turned-operations manager who bridges the gap most SMEs can't fill — technical enough to understand the shop floor, commercial enough to own the P&L.</p>
+    <p class="hero-meta">5+ years of experience across precision CNC manufacturing, supply chain, and commercial operations in India and the UK. MSc Engineering Business Management, University of Exeter.<br />Currently available for Operations Manager and Supply Chain Manager roles in UK advanced manufacturing.</p>
+    <div class="hero-ctas">
+      <a href="#lets-talk" class="btn btn-gold-lg">→ Book a 20-Minute Call</a>
+    </div>
+    <p class="hero-scroll-hint">or scroll to see how I work<br /><span class="scroll-arrow">↓</span></p>
+  </div>
+</section>
+
+<!-- CREDENTIAL BAR -->
+<div class="cred-bar">
+  <div class="cred-table">
+    <div class="cred-row">
+      <div class="cred-left"><span class="cred-emoji">🎓</span> MSc Engineering Business Management</div>
+      <div class="cred-right">University of Exeter</div>
+    </div>
+    <div class="cred-row">
+      <div class="cred-left"><span class="cred-emoji">🔧</span> BE Mechanical Engineering</div>
+      <div class="cred-right">University of Mumbai</div>
+    </div>
+    <div class="cred-row">
+      <div class="cred-left"><span class="cred-emoji">🏭</span> Operations Manager</div>
+      <div class="cred-right">SYMBRO GROUP · Supply Chain · Procurement · Inventory Management</div>
+    </div>
+    <div class="cred-row">
+      <div class="cred-left"><span class="cred-emoji">📡</span> Branch Manager</div>
+      <div class="cred-right">Virgin Media O2 Business · B2B Commercial Operations</div>
+    </div>
+    <div class="cred-row">
+      <div class="cred-left"><span class="cred-emoji">⚙️</span> Production &amp; Project Engineer</div>
+      <div class="cred-right">APH-Tech · CNC Precision Manufacturing</div>
+    </div>
+    <div class="cred-row">
+      <div class="cred-left"><span class="cred-emoji">🏎️</span> Motorsport Engineering Intern</div>
+      <div class="cred-right">Vortex GT Racing · Vehicle Dynamics</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="section section-white" id="about">
+  <div class="container">
+    <h2>The operations hire you've been looking for is harder to find than it should be.</h2>
+    <p>You've seen the CVs. They all look the same.</p>
+    <p>The technical candidates can run a production line but they can't talk to your customers, manage a P&L, or think commercially when it matters. They escalate everything upward.</p>
+    <p>The business candidates understand reporting and strategy but they've never stood on a shop floor, never traced a supply chain failure back to a root cause, never managed a procurement relationship under pressure.</p>
+    <p>You need both. In one person. At a price point that makes sense for a business your size.</p>
+    <p>That's the</p>
+    <span class="word-gap">gap.</span>
+    <p>Most SME MDs in UK advanced manufacturing — businesses with 50–300 employees — are either carrying operations themselves or delegating to someone promoted beyond their competency. Production misses targets. Supplier issues compound. Costs creep. You firefight instead of grow.</p>
+    <p>You're reviewing the same problems every Monday. On-time delivery. Inventory discrepancies. A procurement process that still depends on whoever picks up the phone. You hired for operations but you're still the operations manager in everything but title.</p>
+    <p>Every month you run without a capable operations lead costs you more than a salary. It costs you growth decisions you're too busy to make, strategic conversations you're too tired to have, and a business that stays reactive when it should be scaling.</p>
+  </div>
+</section>
+
+<!-- POSITIONING -->
+<section class="section section-light">
+  <div class="container">
+    <h2>The engineering-business gap is real. And it's costing you more than you think.</h2>
+    <p>There's a persistent assumption in UK SME hiring: that operations management is either a technical role or a management role. Companies hire one or the other, then spend months frustrated that their technical hire can't see the commercial picture, or their management hire doesn't understand the production floor.</p>
+    <p>What actually moves the needle in a 50–300 person manufacturer is a person who can walk into a production meeting, identify the root cause of a missed target, trace it back to a supplier, rewrite the procurement protocol, and then present the financial impact to the MD — without needing a translator at any stage.</p>
+    <p>That's not a unicorn. That's a specific career path. And it's mine.</p>
+
+    <div class="arc-statement">Engineering <span class="arrow">→</span> Operations <span class="arrow">→</span> Commercial.<br />Not a pivot. A progression.</div>
+
+    <ul class="role-list">
+      <li>At <strong>APH-Tech</strong>: ran CNC production lines, managed tooling and raw material procurement in a precision manufacturing environment.</li>
+      <li>At <strong>SYMBRO GROUP</strong>: owned the full operations function — supply chain, procurement, inventory management — across a growing manufacturing business.</li>
+      <li>At <strong>Virgin Media O2 Business</strong>: ran a commercial branch with full B2B client accountability, team management, and revenue target ownership.</li>
+    </ul>
+    <p style="font-size:15px; color:var(--text-mid); margin-top:24px;">Most candidates have one of these chapters. Few have all three.</p>
+  </div>
+</section>
+
+<!-- HOW I WORK -->
+<section class="section section-dark" id="how-i-work">
+  <div class="container-wide">
+    <h2>What the first 90 days looks like</h2>
+    <p class="section-intro">Most operations problems in manufacturing SMEs fall into four categories: production planning gaps, supplier relationship failures, process inefficiency, and team accountability issues. I've worked across all four — in different combinations, at different business sizes, across manufacturing and commercial environments.</p>
+    <p class="section-intro" style="margin-top:-8px; margin-bottom:0;">Here's how I approach a new role:</p>
+
+    <div class="days-grid">
+      <div class="day-card">
+        <div class="day-card-num">01</div>
+        <div class="day-card-phase">Days 1–30</div>
+        <h3>Operational Diagnosis</h3>
+        <p style="font-size:15px; color:rgba(255,255,255,0.75); line-height:24px; margin-bottom:16px;">Before recommending anything, I audit what's actually happening. Not what the reports say. What the floor shows.</p>
+        <ul>
+          <li>Map current production workflows end to end</li>
+          <li>Identify where targets are missed and why — root cause, not symptom</li>
+          <li>Assess supplier relationships: reliability, lead times, risk concentration</li>
+          <li>Review inventory management: turnover, dead stock, reorder logic</li>
+          <li>Talk to the people actually doing the work</li>
+        </ul>
+        <p class="day-output">Output: A clear-eyed picture of where time and money are leaking, prioritised by impact.</p>
+      </div>
+      <div class="day-card">
+        <div class="day-card-num">02</div>
+        <div class="day-card-phase">Days 31–60</div>
+        <h3>Early Improvement</h3>
+        <p style="font-size:15px; color:rgba(255,255,255,0.75); line-height:24px; margin-bottom:16px;">Early results that demonstrate I can solve problems, not just identify them.</p>
+        <ul>
+          <li>Introduce or improve production planning protocols</li>
+          <li>Address the highest-impact supplier or procurement issue from the diagnosis</li>
+          <li>Introduce or tighten the KPI framework the team is accountable to</li>
+          <li>Remove bottlenecks slowing output without requiring capital investment</li>
+        </ul>
+        <p class="day-output">Output: Measurable movement in at least one key metric — OTD, downtime, or procurement cost.</p>
+      </div>
+      <div class="day-card">
+        <div class="day-card-num">03</div>
+        <div class="day-card-phase">Days 61–90</div>
+        <h3>Systems</h3>
+        <p style="font-size:15px; color:rgba(255,255,255,0.75); line-height:24px; margin-bottom:16px;">Build the systems so the business stops depending on specific people to function.</p>
+        <ul>
+          <li>Document processes so they survive staff turnover</li>
+          <li>Build supplier performance frameworks that reduce reliance on informal relationships</li>
+          <li>Create reporting rhythms that give the MD visibility without requiring daily involvement</li>
+          <li>Develop the team so operations runs without escalation</li>
+        </ul>
+        <p class="day-output">Output: Operations that don't require daily MD involvement. A team that owns its targets.</p>
+      </div>
+    </div>
+
+    <div class="month-summary">
+      <div class="month-item">
+        <strong>Month 1</strong>
+        <p>I understand your business better than most people inside it.</p>
+      </div>
+      <div class="month-item">
+        <strong>Month 2</strong>
+        <p>I fix what's broken.</p>
+      </div>
+      <div class="month-item">
+        <strong>Month 3</strong>
+        <p>I build systems so it stays fixed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / CASE STUDIES -->
+<section class="section section-white" id="experience">
+  <div class="container">
+    <h2>What this looks like in practice</h2>
+
+    <div class="case-study">
+      <div class="case-company">SYMBRO GROUP</div>
+      <div class="case-role">Operations Management</div>
+      <div class="case-rule"></div>
+      <p>Owned the full operations function for a manufacturing business: supply chain, procurement, inventory management, and team oversight.</p>
+      <p>I took on a function that had grown faster than its processes. Supplier management was reactive, inventory tracking was inconsistent, and operational decisions were escalating to the MD daily. I restructured how procurement was run, introduced tracking for supplier performance, tightened inventory management, and built clearer accountability structures across the team.</p>
+      <p>The MD's day-to-day involvement in operational decisions reduced significantly. Procurement moved from relationship-dependent to process-driven.</p>
+    </div>
+
+    <div class="case-study">
+      <div class="case-company">APH-Tech</div>
+      <div class="case-role">Production &amp; Project Engineering</div>
+      <div class="case-rule"></div>
+      <p>CNC precision manufacturing. Production planning, tooling, and raw material procurement.</p>
+      <p>The production environment was running without structured planning, which meant targets were missed reactively rather than managed proactively. I introduced structured planning protocols, formalised how tooling and materials were procured, and built basic performance tracking for the line.</p>
+      <p>Production planning moved from reactive to scheduled. Procurement became process-driven rather than informal.</p>
+    </div>
+
+    <div class="case-study">
+      <div class="case-company">Virgin Media O2 Business</div>
+      <div class="case-role">Branch Management</div>
+      <div class="case-rule"></div>
+      <p>B2B commercial operations. P&L accountability. Client relationships. Team management in a revenue-target environment.</p>
+      <p>I managed a full branch — client-facing team, revenue targets, and commercial P&L — in a competitive B2B market. The role required holding three things simultaneously: client relationship quality, team performance, and commercial delivery. The branch operated to target throughout my tenure.</p>
+    </div>
+
+    <p class="case-note">Specific numbers from each role are available in conversation. I'm happy to walk through the detail.</p>
+  </div>
+</section>
+
+<!-- IMPACT TABLE -->
+<section class="section section-light">
+  <div class="container">
+    <h2>What changes when you bring me in</h2>
+    <div class="impact-table-wrap">
+      <table class="impact-table">
+        <thead>
+          <tr>
+            <th>Area</th>
+            <th>Before</th>
+            <th>After 90 Days</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>On-time delivery</td><td>Inconsistent, reactive</td><td>Tracked against target, improving</td></tr>
+          <tr><td>Supplier management</td><td>Informal, relationship-dependent</td><td>Process-driven, monitored</td></tr>
+          <tr><td>Inventory</td><td>Estimated</td><td>Managed and reportable</td></tr>
+          <tr><td>Team accountability</td><td>Unclear targets</td><td>KPI-driven, visible</td></tr>
+          <tr><td>Production planning</td><td>Ad hoc</td><td>Structured and documented</td></tr>
+          <tr><td>MD operational involvement</td><td>Daily firefighting</td><td>Periodic review</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="impact-note">An SME MD spending 3 hours a day on operational decisions that an operations manager should be handling is diverting roughly 60 hours a month — 15 working days a year — away from growth, sales, and strategy. That time has a cost whether it appears on a budget line or not.</p>
+    <p class="salary-line">A salary of £48,000–£55,000, validated against current UK market rates for operations management roles at this experience level, is the investment that buys those 15 days back — plus everything else that runs properly as a result.</p>
+  </div>
+</section>
+
+<!-- DIFFERENTIATORS -->
+<section class="section section-white">
+  <div class="container">
+    <h2>What makes this combination unusual</h2>
+    <p>There are three types of candidates applying for operations roles in UK manufacturing right now.</p>
+
+    <div style="margin-top:36px;">
+      <div class="diff-type">
+        <div class="diff-type-label">The Linear Ops Manager</div>
+        <p>10 years in one sector. Deep domain knowledge. No commercial exposure. Strong in a corporate environment. In an SME where every operational decision has a financial consequence, the gap shows quickly.</p>
+      </div>
+      <div class="diff-type">
+        <div class="diff-type-label">The Recent MSc Graduate</div>
+        <p>Strong academic foundation. Limited operational accountability. Has supported projects. Hasn't owned one end to end.</p>
+      </div>
+      <div class="diff-type">
+        <div class="diff-type-label">The Six Sigma Specialist</div>
+        <p>Process-focused. Excellent where methodology can be followed. Often struggles in resource-constrained SMEs where judgment matters more than framework.</p>
+      </div>
+
+      <hr class="diff-divider" />
+      <p class="diff-fourth-label">Then there's a less common fourth path:</p>
+      <div class="diff-type">
+        <div class="diff-type-label">An engineer who took operations ownership seriously, gained deliberate commercial exposure, and then upgraded academically to understand the business logic behind the shop floor.</div>
+        <p>That's the trajectory. And at this experience level and salary band, it's genuinely uncommon in the UK market.</p>
+      </div>
+    </div>
+
+    <ul class="diff-bullets">
+      <li><strong>India + UK manufacturing experience</strong> — two different supply chain environments, different problem-solving pressures, different supplier dynamics. That range is an asset in cross-functional and international procurement contexts.</li>
+      <li><strong>Sustainability module, MSc Exeter</strong> — relevant as customers and regulators increase ESG pressure on UK manufacturing supply chains.</li>
+      <li><strong>Motorsport engineering internship</strong> — precision manufacturing standards, high-performance team environment, zero-defect culture from early in the career.</li>
+      <li><strong>Multilingual: English, Gujarati, Hindi (full professional), Marathi (working)</strong> — directly useful in international procurement and supplier conversations.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-light" id="faq">
+  <div class="container">
+    <h2>What hiring managers usually ask</h2>
+    <ul class="faq-list">
+
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Your background is varied — manufacturing in India, commercial at Virgin O2. Is that a strength or a weakness?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>It's a strength in an SME context. Linear specialists are built for corporate environments where you go deep in one lane. SME operations management requires breadth — engineering, commercial reality, people management, and supplier relationships all at once. The varied background isn't a gap. It's the shape of the role.</p>
+          <p>The MSc from Exeter was specifically designed to connect the engineering and business threads — as a practical framework for exactly this kind of cross-functional role.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          You don't have 10+ years of UK manufacturing experience. Is that a problem?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>The relevant question isn't years in sector — it's whether someone has owned a real operations function and delivered against real targets. At SYMBRO GROUP I owned the full operations function. At APH-Tech I ran production and procurement. At Virgin O2 I owned a commercial P&L. The combination of engineering depth and commercial accountability is more useful to a growing SME than a decade of doing one thing in one industry.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do you have experience with specific ERP or production management systems?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>I've worked with production planning and inventory management systems in manufacturing environments. System adaptation is not the constraint — operational understanding is. The intuition for how operations should run is what takes years to build. The system is a tool.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          You're looking for £48K–£55K. Is that firm?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>That range reflects current market rates for operations management at this experience level in UK advanced manufacturing. I'm open to discussing structure — base, performance component, and progression — as part of a conversation. If the role is the right fit, the compensation conversation is workable.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What's your availability?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Immediate. I can start within two weeks of an accepted offer. Conversations, site visits, and informal meetings can happen now.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Why talk to you directly rather than through the standard process?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Because the standard process filters on keywords, not judgment. Operations management in an SME is a judgment hire. A 20-minute conversation will tell you more than any CV. That's why it exists — not to pitch, but to give both sides a fast, honest read on whether this is worth pursuing.</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="section section-dark">
+  <div class="container">
+    <h2>What you're actually getting</h2>
+    <p class="section-intro" style="margin-bottom:48px;">When you hire at this level, you're not buying a job title. You're buying a specific set of capabilities applied to your specific problems.</p>
+    <div class="cap-grid">
+      <div class="cap-block">
+        <div class="cap-name">Engineering intelligence</div>
+        <p class="cap-desc">I can read a production floor, identify process failures, and trace root causes without needing to be briefed on the technical background first. Most operations managers need that onboarding time. I don't.</p>
+      </div>
+      <div class="cap-block">
+        <div class="cap-name">Commercial accountability</div>
+        <p class="cap-desc">I've run a P&L. Every operational decision has a financial consequence. I won't optimise a process that costs more to improve than it saves.</p>
+      </div>
+      <div class="cap-block">
+        <div class="cap-name">Supplier management</div>
+        <p class="cap-desc">I've managed procurement in manufacturing environments where supplier relationships are the difference between hitting targets and missing them. I know how to build those relationships and hold them to performance standards.</p>
+      </div>
+      <div class="cap-block">
+        <div class="cap-name">Team management</div>
+        <p class="cap-desc">I've led teams across operations and commercial environments. I know the difference between setting a target and building the conditions for a team to hit it consistently.</p>
+      </div>
+      <div class="cap-block">
+        <div class="cap-name">Systems thinking</div>
+        <p class="cap-desc">I don't just fix the problem in front of me. I build the process that stops it coming back.</p>
+      </div>
+      <div class="cap-block">
+        <div class="cap-name">MSc-level commercial framing</div>
+        <p class="cap-desc">When I make a recommendation, I can quantify it, frame it commercially, and defend it. You won't get recommendations that sound right but don't hold up under scrutiny.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RISK REVERSAL -->
+<section class="section section-white">
+  <div class="container">
+    <h2>Reducing the risk before we start</h2>
+    <p>Hiring at operations manager level carries real risk for a small business. If it doesn't work, you're managing a capability gap, a fresh recruitment process, and months of lost time simultaneously.</p>
+    <p>Here's how I reduce that risk before we commit:</p>
+
+    <div style="margin-top:40px;">
+      <div class="risk-block">
+        <strong>I'll tell you if I'm not the right fit.</strong>
+        <p>I'll tell you in the first conversation if I don't think I'm the right fit. I won't pursue a role that isn't right for both sides.</p>
+      </div>
+      <div class="risk-block">
+        <strong>For the right opportunity, I'm open to a structured diagnostic.</strong>
+        <p>I'll look at a real operational challenge in your business and present my findings. You keep the output. We both get a clear picture of whether this works before either side commits.</p>
+      </div>
+      <div class="risk-block">
+        <strong>My references speak to operational outcomes, not character.</strong>
+        <p>You'll be able to verify the track record against specific situations before any offer is made.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="lets-talk">
+  <div class="final-cta-inner">
+    <h2>The role you need filled is costing you time every week it stays open.</h2>
+    <p>Every week without capable operations leadership means more MD hours diverted, more decisions escalated, more targets missed, and more reactive firefighting instead of building. If you've read this far, you already have a sense of whether the profile fits.</p>
+    <a href="#lets-talk" class="btn btn-gold-lg">→ Book a 20-Minute Call</a>
+    <div class="contact-details">
+      <a href="mailto:dhaval.vegad@email.com">📧 dhaval.vegad@email.com</a>
+      <a href="https://linkedin.com/in/dhaval-vegad" target="_blank" rel="noopener">💼 linkedin.com/in/dhaval-vegad</a>
+      <span>📍 Available across the UK — open to relocation for the right opportunity</span>
+    </div>
+    <p class="available-line">Currently available. Response within 24 hours.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <div class="footer-name">Dhaval Vegad</div>
+      <div class="footer-title">Operations Manager | Advanced Manufacturing | UK</div>
+      <div class="footer-creds">
+        MSc Engineering Business Management — University of Exeter<br />
+        BE Mechanical Engineering — University of Mumbai
+      </div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="https://linkedin.com/in/dhaval-vegad" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="/dhaval-vegad-cv.pdf" target="_blank">Download CV</a></li>
+      <li><a href="#lets-talk">Book a Call</a></li>
+    </ul>
+    <div class="footer-copy">© 2026 Dhaval Vegad</div>
+  </div>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const icon   = btn.querySelector('.faq-icon');
+      const isOpen = answer.classList.contains('open');
+
+      document.querySelectorAll('.faq-a.open').forEach(a => {
+        a.classList.remove('open');
+        a.previousElementSibling.querySelector('.faq-icon').textContent = '+';
+        a.previousElementSibling.setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        answer.classList.add('open');
+        icon.textContent = '−';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // Sticky nav shadow on scroll
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.boxShadow = window.scrollY > 10
+      ? '0 2px 20px rgba(0,0,0,0.25)'
+      : 'none';
+  });
+</script>
+</body>
+</html>
