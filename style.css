@@ -538,7 +538,7 @@ footer {
   font-family: 'IBM Plex Mono', monospace;
   font-size: var(--fs-mono);
   color: var(--color-text-muted);
-  text-transform: lowercase !important;
+  text-transform: none;
   font-variant: normal;
 }
 .footer-links {
