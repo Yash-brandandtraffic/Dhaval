@@ -64,3 +64,24 @@ document.querySelectorAll('.faq-btn').forEach(btn => {
     }
   });
 });
+
+/* Decorative background: quiet playback, with a static motion preference fallback. */
+const heroVideo = document.getElementById('hero-video');
+if (heroVideo) {
+  const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let heroVisible = true;
+  const syncHeroVideo = () => {
+    if (heroVisible && !document.hidden && !motionPreference.matches) {
+      heroVideo.play().catch(() => {});
+    } else {
+      heroVideo.pause();
+    }
+  };
+  new IntersectionObserver(entries => {
+    heroVisible = entries[0].isIntersecting;
+    syncHeroVideo();
+  }, { threshold: 0.05 }).observe(document.querySelector('.hero'));
+  motionPreference.addEventListener('change', syncHeroVideo);
+  document.addEventListener('visibilitychange', syncHeroVideo);
+  syncHeroVideo();
+}
