@@ -733,3 +733,6 @@ main, .section, .hero, footer { text-align:center; }
 }
 .exp-dates { color:#cdd9e5; font-size:.9rem; }
 .exp-location { max-width:100%; }
+.cred-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.cred-card .card-role-detail { margin-top:18px; color:var(--color-accent); font-size:.875rem; }
+@media(max-width:640px) { .cred-grid { grid-template-columns:1fr; } }
